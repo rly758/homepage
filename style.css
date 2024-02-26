@@ -1,9 +1,7 @@
 body {
-    padding: 1.5rem;
+    padding: 4rem 4rem 0 4rem;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
 .portrait, .header, .screenshot, h2 {
@@ -12,18 +10,52 @@ body {
 
 .about {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-template-columns: 4fr 6fr;
 }
 
 .portrait {
     margin-left: 0;
     margin-right: 0;
+    position: relative;
+    font-size: 0;
 }
 
 .portrait img {
-    width: 320px;
-    height: 100%;
+    width: 100%;
+    height: 480px;
     object-fit: cover;
+}
+
+.portrait .nameContainer {
+    position: absolute;
+    font-size: 3rem;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.name {
+    margin: 0 0 1rem 0;
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    padding: 1rem;
+    max-width: 600px;
+    box-shadow: 10px 10px 14px -6px #A4A4A5;
+}
+
+.intro .socials {
+    justify-content: flex-end;
 }
 
 .container {
@@ -48,9 +80,21 @@ body {
 
 .phone, .email {
     display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
     align-items: center;
 }
 
 .socials img {
     height: 2rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
 }
