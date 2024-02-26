@@ -1,0 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.portrait, .header, .screenshot, h2 {
+    font-family: 'Playfair Display', sans-serif;
+}
