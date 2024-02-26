@@ -1,7 +1,56 @@
 body {
+    padding: 1.5rem;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .portrait, .header, .screenshot, h2 {
     font-family: 'Playfair Display', sans-serif;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+}
+
+.portrait {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.portrait img {
+    width: 320px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectLinks img, .phone img, .email img{
+    height: 1.5rem;
+}
+
+.contactContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+}
+
+.phone, .email {
+    display: flex;
+    align-items: center;
+}
+
+.socials img {
+    height: 2rem;
 }
